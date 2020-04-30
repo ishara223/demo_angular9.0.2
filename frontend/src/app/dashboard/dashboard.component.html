@@ -1,0 +1,12 @@
+
+<h2>{{items[0].name}}</h2>
+<h3>Awailable sizes</h3>
+<button *ngFor="let item of items" (click)="getItem(item.id)">{{item.size}}</button>
+<div>
+    <p>{{selectedOneItem.name}}</p>
+    <p>{{selectedOneItem.price}}</p>
+    <p>{{selectedOneItem.size}}</p>
+    <p>{{selectedOneItem.discription}}</p>
+    <img style="width: 100px;"  src="http://localhost:8081/api/img/{{selectedOneItem.img}}"/>
+</div>
+
